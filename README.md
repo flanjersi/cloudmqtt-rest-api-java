@@ -20,7 +20,7 @@ You can do all of treatment with the class : **CloudMQTTAPI**
 
 ### Example of instanciation of **CloudMQTTAPI**
 
- CloudMQTTAPI api = new CloudMQTTAPI("yourapikey");
+```CloudMQTTAPI api = new CloudMQTTAPI("yourapikey");```
 
 ### Example of use the InstanceSectionAPI
 
