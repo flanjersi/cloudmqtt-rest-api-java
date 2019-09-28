@@ -51,25 +51,25 @@ To get all of users name in the instance call the **getUsersName()** method as b
 List<String> names = api.getUserAPI().getUsersName();
 ```
 
-To get details of an user in the instance call the **getUserInfo()** method as below :
+To get details of an user in the instance call the **getUserInfo(String username)** method as below :
 
 ```java
 User user = api.getUserAPI().getUserInfo("username");
 ```
 
-To create an user in the instance call the **createUser()** method as below :
+To create an user in the instance call the **createUser(String username, String password)** method as below :
 
 ```java
 api.getUserAPI().createUser("username", "password");
 ```
 
-To create update the user password in the instance call the **updateUserPassword()** method as below :
+To create update the user password in the instance call the **updateUserPassword(String username, String password)** method as below :
 
 ```java
 api.getUserAPI().updateUserPassword("username", "newPassword");
 ```
 
-To remove an user in the instance call the **removeUser()** method as below :
+To remove an user in the instance call the **removeUser(String username)** method as below :
 
 ```java
 api.getUserAPI().removeUser("username");
@@ -82,4 +82,32 @@ The instance of the section can be find at :
 ```java
 ACLSectionAPI userAPI = api.getAclAPI()
 ```
+
+To get all of ACL run call the **getACLRules()** method as below :
+
+```java
+List<ACL> aclRules = api.getAclAPI().getACLRules();
+```
+
+To create an acl rule topic call the **createTopicACL(String username, String topic, boolean read, boolean write)** method as below :
+
+```java
+api.getAclAPI().createTopicACL("username", "topic", true, true);
+```
+
+To create an acl rule pattern call the **createPatternACL(String pattern, boolean read, boolean write)** method as below :
+
+```java
+api.getAclAPI().createPatternACL("topic", true, false);
+```
+
+To remove an acl rule topic call the **removeACLRule(String username, String topic)** method as below :
+
+```java
+api.getAclAPI().removeACLRule("username", "topic");
+```
+
+
+
+
 
