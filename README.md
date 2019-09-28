@@ -4,7 +4,7 @@
 
 I had develop this API to help developers to manage their CloudMQTT configurations (add/remove/edit user, add/remove ACL ...)
 
-## Documentations links
+## Links to documentation
 
 * Link of CloudMQTT : https://www.cloudmqtt.com/
 * Link of HTTP Api documentation of CloudMQTT Instance : https://docs.cloudmqtt.com/cloudmqtt_api.html
