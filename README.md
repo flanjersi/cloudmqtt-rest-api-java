@@ -29,7 +29,7 @@ CloudMQTTAPI api = new CloudMQTTAPI("yourapikey");
 The instance of the section can be find at :
 
 ```java
-api.getInstanceAPI()
+InstanceSectionAPI instanceSectionAPI = api.getInstanceAPI()
 ```
 
 To restart the application call the **restart()** method as below
@@ -38,6 +38,12 @@ api.getInstanceAPI().restart();
 ```
 
 ### Example of use the UserSectionAPI
+
+The instance of the section can be find at :
+
+```java
+UserSectionAPI userAPI = api.getUserAPI()
+```
 
 To get all of users name in the instance call the **getUsersName()** method as below :
 
@@ -69,7 +75,11 @@ To remove an user in the instance call the **removeUser()** method as below :
 api.getUserAPI().removeUser("username");
 ```
 
-
-
 ### Example of use the ACLSectionAPI
+
+The instance of the section can be find at :
+
+```java
+ACLSectionAPI userAPI = api.getAclAPI()
+```
 
